@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cardview_default_radius"
+        android:layout_marginLeft="@dimen/cardview_default_radius"
+        tools:ignore="RtlCompat">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tasktext"
+            android:textColor="@color/colorPrimary"
+            android:text="TASK"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:textAlignment="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newtask"
+            android:layout_below="@+id/tasktext"
+            android:textStyle="italic"
+            android:hint="TASK"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newDescription"
+            android:layout_below="@id/newtask"
+            android:textStyle="italic"
+            android:hint="Description"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newsubmit"
+            android:layout_below="@id/newDescription"
+            android:text="ADD"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:background="@color/cardview_shadow_end_color"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
